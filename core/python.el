@@ -30,7 +30,8 @@
   (evil-beginning-of-line))
 
 (use-package python
-  :hook (python-mode . hs-minor-mode)
+  :hook (python-mode . hs-minor-mode
+         python-mode . ipython-open-repl)
   :config
   (setq python-shell-interpreter "ipython"
 	    python-shell-interpreter-args "--simple-prompt -i"
