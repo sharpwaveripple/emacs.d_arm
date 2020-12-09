@@ -30,8 +30,7 @@
   (evil-beginning-of-line))
 
 (use-package python
-  :hook (python-mode . hs-minor-mode
-         python-mode . ipython-open-repl)
+  :hook (python-mode . hs-minor-mode)
   :config
   (setq python-shell-interpreter "ipython"
 	    python-shell-interpreter-args "--simple-prompt -i"
@@ -41,6 +40,8 @@
    :keymaps 'python-mode-map
    :major-modes t
    "<C-return>" 'elpy-shell-send-group-and-step))
+
+(add-hook 'python-mode-hook #'ipython-open-repl)
 
 (use-package sphinx-doc
   :after python
