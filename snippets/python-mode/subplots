@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: subplots
+# key: subplots
+# --
+fig, ax = plt.subplots(figsize=(16, 9))
+
+fig.tight_layout()
+fig.show()

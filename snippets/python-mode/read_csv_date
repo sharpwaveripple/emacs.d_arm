@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: read_csv_date
+# key: read_csv_date
+# --
+${df} = pd.read_csv("${path}", low_memory=False, parse_dates=["${datecol}"], index_col="${datecol}")
