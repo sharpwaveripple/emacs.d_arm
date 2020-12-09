@@ -182,8 +182,6 @@
 (display-battery-mode)
 (column-number-mode)
 
-(add-to-list 'default-frame-alist
-             '(font . "Anonymous Pro-12"))
 ;; (setq doom-font (font-spec :family "Deja Vu Sans Mono" :size 18))
 
 (use-package all-the-icons)
